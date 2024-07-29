@@ -13,7 +13,7 @@ SpiderHQ ist eine Webanwendung zum Überwachen und Steuern von Scrapy-Spiders. D
 * Verbindung zum Datenbankserver über einen SSH-Tunnel (z.B. HeidiSQL) möglich, um aus den Daten eine CSV-Datei zu erzeugen. Andere Datenformate, wie z.B. JSON, werden ebenfalls unterstützt
 
 # Proxyliste
-Die Proxyliste kann in der [config/ebakeryConfig.py](https://github.com/ebakery-de/EbakerySpiderHQ/blob/main/config/ebakeryConfig.py) geändert werden. 
+Die Proxyliste kann in der [config/config.py](Config.py](https://github.com/zerlix/SpiderHQ/blob/main/config/config.py)) geändert werden. 
 ```
 ##############################################
 # Proxys
