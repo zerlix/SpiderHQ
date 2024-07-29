@@ -1,6 +1,6 @@
-# EbakerySpiderHQ
+# SpiderHQ
 
-EbakerySpiderHQ ist eine Webanwendung zum Überwachen und Steuern von Scrapy-Spiders. Die extrahierten Daten werden zur späteren Verarbeitung in einem MariaDB-Datenbankserver gespeichert. Die Anwendung ist unter http://127.0.0.1:5000 erreichbar.
+SpiderHQ ist eine Webanwendung zum Überwachen und Steuern von Scrapy-Spiders. Die extrahierten Daten werden zur späteren Verarbeitung in einem MariaDB-Datenbankserver gespeichert. Die Anwendung ist unter http://127.0.0.1:5000 erreichbar.
 
 # Features
 
