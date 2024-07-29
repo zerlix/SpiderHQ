@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+}
+
+.menu {
+  width: 200px;
+  flex: 0 0 auto;
+  /* Weitere Stile für das Menü */
+}
+
+.content {
+  flex: 1 1 auto;
+  /* Weitere Stile für den Inhalt */
+}
+
+.form {
+  text-align: right;
+}
+
+
+.form-container {
+  display: flex;
+  padding-top: 5px;
+  justify-content: flex-end;
+}
+
+
+.logfile {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title {
+  text-align: center;
+  color: #4CAF50;
+}
+
+
+.terminal {
+  background-color: black;
+  color: #4CAF50;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+}
+
+
+.ListSpider {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.ListSpider th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.ListSpider th, .ListSpider td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+
+.ListSpider tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.ListSpider tr:hover {
+  background-color: #ddd;
+}
+
+
+
+.button-start {
+  width: 100px;
+  color: white;
+  background:  #008000;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgb(4, 240, 23) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #00800098;
+}
+
+.button-start:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #00800098;
+}
+
+.button-start:active {
+  box-shadow: 0 0.3em 1em -0.5em #00800098;
+}
+
+
+.button-stop {
+  width: 100px;
+  color: white;
+  background:  #dd4719;
+  background: linear-gradient(0deg, rgb(189, 0, 0) 0%, rgb(255, 102, 0) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #dd4719;
+}
+
+
+.button-stop:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #dd4719;
+}
+
+.button-stop:active {
+  box-shadow: 0 0.3em 1em -0.5em #dd4719;
+}

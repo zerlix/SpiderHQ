@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/ebakery.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    setInterval(function() {
+        $.get('/getlog', function(data) {
+            $('.terminal').text(data);
+        });
+    }, 1000);
+</script>
+    <title>{{Projektname}}</title>
+</head>
+
+<body>
+
+<h1 class="title">{{Projektname}}</h1>
+<div class="container">
+    <div class="menu">
+        <table class="ListSpider">
+            <tr>
+                <th>Projekte</th>
+            </tr> <!-- Menu -->
+            {% for p in scrapy_projects %}
+            <tr>
+                <td>
+                    {% if p.settings.get('BOT_NAME') %}
+                    <a href="/project/{{ p.settings.get('BOT_NAME') }}">{{ p.settings.get('BOT_NAME') }} 1</a>
+                    {% else %}
+                    <span>Ungültiges Projekt</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div><!--End Menu DIV-->
+
+    <!-- Start Content -->
+    <div class="content"> 
+        <table class="ListSpider">
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+        {% for spider in spiders %}
+        <tr>
+            <td>{{ spider }}</td>
+            {% if project.is_running() == True %}
+                <td>Spider ist aktiv</td>
+                <td><a href="/stop?spider={{spider}}">
+                    <button class="button-stop" role="button">Stop</button>
+                    </a>
+                </td>
+            {% else %}
+                <td>Spider ist inaktiv</td>
+                <td><a href="/start?spider={{spider}}">
+                    <button class="button-start" role="button">Start</button>
+                    </a>
+                </td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+        <tr><td></td><td></td><td></td></tr>
+        </table>
+
+
+        <div class="form-container">
+            <form>
+                <input type="submit" class="button-start" value="Alle Starten" formaction="/startAll">
+                <input type="submit" class="button-stop" value="Alle Stoppen" formaction="/stopAll">
+            </form>
+        </div>
+
+
+    <div class="logfile">
+        <textarea class="terminal" rows="20" cols="120" name="message" placeholder=""></textarea>
+    </div>
+    </div><!--End Content DIV-->
+</div> <!-- End Container DIV-->
+</body>
+</html>
