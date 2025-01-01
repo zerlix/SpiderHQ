@@ -10,7 +10,7 @@ SpiderHQ ist eine Webanwendung zum Überwachen und Steuern von Scrapy-Spiders. D
 * aktualisiert automatisch die Proxy Liste (tmp/proxy_list.tmp)
 * Webanwendung mit Flask zum Überwachen der Spiders und Steuern der Scrapy-Projekte (noch nicht implemtiert)
 * Extrahierte Daten werden auf einem separaten MariaDB-Datenbankserver gespeichert
-* Verbindung zum Datenbankserver über einen SSH-Tunnel (z.B. HeidiSQL) möglich, um aus den Daten eine CSV-Datei zu erzeugen. Andere Datenformate, wie z.B. JSON, werden ebenfalls unterstützt
+
 
 # Proxyliste
 Die Proxyliste kann in der [config/config.py](Config.py](https://github.com/zerlix/SpiderHQ/blob/main/config/config.py)) geändert werden. 
