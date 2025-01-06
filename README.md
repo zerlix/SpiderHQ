@@ -8,7 +8,7 @@ SpiderHQ ist eine Webanwendung zum Überwachen und Steuern von Scrapy-Spiders. D
 * Unterstützung für Selenium, Scrapy, Scrapy-Splash, BeautifulSoup4 und andere Bibliotheken
 * Aktivierbare Proxy-Funktion, um Bans vorzubeugen
 * aktualisiert automatisch die Proxy Liste (tmp/proxy_list.tmp)
-* Webanwendung mit Flask zum Überwachen der Spiders und Steuern der Scrapy-Projekte (noch nicht implemtiert vollständig)
+* Webanwendung mit Flask zum Überwachen der Spiders und Steuern der Scrapy-Projekte (noch nicht vollständig)
 
 
 # Proxyliste
